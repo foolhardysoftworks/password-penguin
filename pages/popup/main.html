@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="/library/scrypt.js"></script>
+    <script src="/library/jquery-2.0.3.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="username_wrapper">
+	<label for="username">Site Name</label>
+	<input id="username" type="text"/>
+      </div>
+      <div id="secret_wrapper">
+	<label for="secret">Secret</label>
+	<input id="secret" type="password" /> 
+      </div>
+      <div id="length_wrapper">
+	<select id="length_">
+	  <option value="48">Short (8)</option>
+	  <option value="64">64 Bit</option>
+	  <option value="96" selected="selected">Long (16)</option>
+	  <option value="128">128 Bit</option>
+	  <option value="192">Huge (32)</option>
+	  <option value="256">256 Bit</option>
+	  <option value="512">512 Bit</option>
+	  <option value="1024">1024 Bit</option>
+	</select>
+      </div>
+      <input id="submit" type="submit" value="Compute Password"/>
+      <div id="feet"></div>
+      <div id="head"></div>
+    </div>
+  </body>
+</html>
+
+

@@ -11,6 +11,7 @@
     },
     "browser_action":{
 	"default_icon": "icons/icon128.png",
-	"default_popup": "password-penguin.html"
-    }
+	"default_popup": "pages/popup/main.html"
+    },
+    "options_page":"pages/options/main.html"
 }
